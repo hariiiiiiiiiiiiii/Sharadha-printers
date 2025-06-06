@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharadha Printers</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 1rem 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .nav-left h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: white;
+      font-style: italic;
+      font-family: fantasy;
+      font-weight: 100;
+    }
+
+    .nav-right a {
+      margin-left: 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #hero {
+      height: 100vh;
+      background-image: url('printbg.jpg');
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+     
+      color: white;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      margin-top:0;
+      padding-top: 60px;
+
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      font-weight: 100;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:#000;
+    }
+
+    section {
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    /* Updated background and removed border-radius */
+    #services{
+      background: linear-gradient(135deg, #ffe6f0 0%, #ffd9ec 50%, #ffeef5 100%);
+      color: #333;
+      padding: 80px 20px;
+    }
+    #contact {
+      background: linear-gradient(to right, #ffeef5 0%, #ffd9ec 50%, #ffe6f0 100%);
+      color: #333;
+      padding: 80px 20px;
+    }
+
+    .services-h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #d63384;
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .services-left, .services-right {
+      flex: 1 1 400px;
+      min-width: 300px;
+    }
+
+    ul.service-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    ul.service-list li {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    ul.service-list li::before {
+      content: "✔";
+      color: #d63384;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.2rem;
+    }
+
+    .whatsapp-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 300px;
+      font-size: 1rem;
+    }
+
+    .whatsapp-link:hover {
+      background-color: #1ebe5d;
+    }
+
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    footer h4 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      #hero h1 {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+
+      .services-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .services-left, .services-right {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="nav-left">
+        <h1>SHARADHA PRINTERS</h1>
+      </div>
+      <div class="nav-right">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Sharadha Printers Surathkal.</h1>
+    <p>Since 2000, Sharadha Printers has been a reliable name in quality printing. Known for our professionalism and attention to detail, we deliver high-quality prints that offer true value for money. We undertake all types of printing work, including invitation cards, flex banners, stamps, seals, and stickers. With years of experience and a strong commitment to customer satisfaction, we’ve earned the trust of clients across all sectors.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2 class="services-h2">Our Services</h2>
+    <div class="services-container">
+      <div class="services-left">
+        <ul class="service-list">
+          <li>Invitation Cards Printing</li>
+          <li>Business Cards</li>
+          <li>Digital Prints</li>
+          <li>Offset Prints</li>
+          <li>Flex Banners</li>
+          <li>Xerox</li>
+          <li>Book Bindings</li>
+        </ul>
+      </div>
+      <div class="services-right">
+        <ul class="service-list">
+          <li>Stamps & Seals</li>
+          <li>Stickers</li>
+          <li>Custom Printing Solutions</li>
+          <li>Bill Books</li>
+          <li>Lamination</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Talk to Us</h2>
+    <a
+      href="https://wa.me/917975591630?text=Hello, I would like to enquire about your printing services."
+      target="_blank"
+      class="whatsapp-link"
+    >
+      Message Us on WhatsApp
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h4>Contact Information</h4>
+    <p><strong>Outlet 1:</strong> Main Road, Surathkal, Mangalore - 575014</p>
+    <p><strong>Outlet 2:</strong> Market Road, Katipalla, Mangalore - 575030</p>
+    <p><strong>Phone:</strong> +91 7975591630 | +91 9876543210</p>
+    <p><strong>Email:</strong> sharadhaprinters@gmail.com</p>
+    <p>&copy; 2025 Sharadha Printers. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
