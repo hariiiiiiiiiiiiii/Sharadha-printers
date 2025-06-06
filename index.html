@@ -62,19 +62,18 @@
       height: 100vh;
       background-image: url('printbg.jpg');
       background-size: cover;
+      background-position: center;
       display: flex;
       flex-direction: column;
-      
       align-items: center;
-     
       color: white;
     }
 
     #hero h1 {
       font-size: 3rem;
-      margin-top:0;
+      margin-top: 0;
       padding-top: 60px;
-
+      text-align: center;
     }
 
     #hero p {
@@ -85,7 +84,8 @@
       line-height: 1.6;
       font-weight: 100;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color:#000;
+      color: #000;
+      text-align: center;
     }
 
     section {
@@ -93,12 +93,12 @@
       text-align: center;
     }
 
-    /* Updated background and removed border-radius */
-    #services{
+    #services {
       background: linear-gradient(135deg, #ffe6f0 0%, #ffd9ec 50%, #ffeef5 100%);
       color: #333;
       padding: 80px 20px;
     }
+
     #contact {
       background: linear-gradient(to right, #ffeef5 0%, #ffd9ec 50%, #ffe6f0 100%);
       color: #333;
@@ -121,7 +121,8 @@
       text-align: left;
     }
 
-    .services-left, .services-right {
+    .services-left,
+    .services-right {
       flex: 1 1 400px;
       min-width: 300px;
     }
@@ -140,7 +141,7 @@
     }
 
     ul.service-list li::before {
-      content: "✔";
+      content: "\2714";
       color: #d63384;
       position: absolute;
       left: 0;
@@ -180,10 +181,14 @@
       margin: 5px 0;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       nav {
         flex-direction: column;
         gap: 0.5rem;
+      }
+
+      .nav-right a {
+        margin: 0.5rem 0;
       }
 
       #hero h1 {
@@ -191,20 +196,23 @@
         padding: 1rem;
       }
 
+      #hero p {
+        font-size: 1rem;
+      }
+
       .services-container {
         flex-direction: column;
         text-align: center;
       }
 
-      .services-left, .services-right {
+      .services-left,
+      .services-right {
         min-width: 100%;
       }
     }
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
   <header>
     <nav>
       <div class="nav-left">
@@ -218,13 +226,11 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section id="hero">
     <h1>Sharadha Printers Surathkal.</h1>
     <p>Since 2000, Sharadha Printers has been a reliable name in quality printing. Known for our professionalism and attention to detail, we deliver high-quality prints that offer true value for money. We undertake all types of printing work, including invitation cards, flex banners, stamps, seals, and stickers. With years of experience and a strong commitment to customer satisfaction, we’ve earned the trust of clients across all sectors.</p>
   </section>
 
-  <!-- Services Section -->
   <section id="services">
     <h2 class="services-h2">Our Services</h2>
     <div class="services-container">
@@ -251,19 +257,13 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Talk to Us</h2>
-    <a
-      href="https://wa.me/917975591630?text=Hello, I would like to enquire about your printing services."
-      target="_blank"
-      class="whatsapp-link"
-    >
+    <a href="https://wa.me/917975591630?text=Hello, I would like to enquire about your printing services." target="_blank" class="whatsapp-link">
       Message Us on WhatsApp
     </a>
   </section>
 
-  <!-- Footer -->
   <footer>
     <h4>Contact Information</h4>
     <p><strong>Outlet 1:</strong> Main Road, Surathkal, Mangalore - 575014</p>
@@ -272,6 +272,5 @@
     <p><strong>Email:</strong> sharadhaprinters@gmail.com</p>
     <p>&copy; 2025 Sharadha Printers. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
